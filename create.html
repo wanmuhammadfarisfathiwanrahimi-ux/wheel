@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Make a Wheel</title>
+</head>
+<body>
+<h2>Make Your Wheel</h2>
+
+<form action="spin.php" method="post">
+
+<fieldset>
+<legend>Wheel Details</legend>
+Title: <input type="text" name="title" value="Lunch Picker"><br><br>
+Options (one per line):<br>
+<textarea rows="6" cols="30" name="options">Nasi Lemak
+Mee Goreng
+Roti Canai
+Satay
+Laksa</textarea>
+</fieldset>
+<br>
+
+Theme:
+<select name="theme">
+  <option value="sunset">Sunset</option>
+  <option value="ocean">Ocean</option>
+  <option value="candy">Candy</option>
+</select>
+<br><br>
+
+Spin speed:
+<input type="radio" name="speed" value="fast" checked> Fast (3 seconds)
+<input type="radio" name="speed" value="slow"> Slow (6 seconds)
+<br><br>
+
+<input type="checkbox" name="save" value="yes"> Also save this wheel to the database
+<br><br>
+
+<input type="submit" value="Spin!">
+<input type="reset" value="Clear">
+
+</form>
+</body>
+</html>
